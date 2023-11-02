@@ -9,8 +9,10 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
+        'BannerMobile': "url('../src/assets/imgs-design/relevo-fluido-mobile.webp')",
         'Banner': "url('../src/assets/imgs-design/relevo-fluido.jpeg')",
-        'Picture-profile': "url('../src/assets/imgs-janilton/header-img.png')"
+        'Picture-Profile': "url('../src/assets/imgs-janilton/foto-header.png')",
+        'Picture-Profile-Mobile': "url('../src/assets/imgs-janilton/foto-header.webp')"
       },
       fontFamily: {
         Roboto: ['Roboto, sans-serif'],
