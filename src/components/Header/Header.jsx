@@ -14,7 +14,7 @@ export default function Header() {
             <div className="w-full h-full  bg-blue-800 px-5 sm:px-10 xl:px-20 flex items-center justify-between font-Montserrat font-semibold ">
                 <Link to='/' onClick={() => scrollToTop()} className="cursor-pointer">
                     <div className="w-[130px] sm:w-[170px]">
-                        <h1 className="text-[1.15rem] sm:text-2xl text-center text-[#fff]">Prof. Janilton Almeida</h1>
+                        <h1 className="text-[1.15rem] sm:text-[1.4rem] leading-7 text-center text-[#fff]">Prof. Janilton Almeida</h1>
                     </div>
                 </Link>
                 <div className="mr-1 cursor-pointer">

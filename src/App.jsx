@@ -1,17 +1,16 @@
 import { Routes, Route } from 'react-router-dom';
-import Sobre from '../components/AboutSection/AboutSection';
-import Canal from '../components/ChannelSection/ChannelSection';
-import Contato from '../components/ContactSection/ContactSection';
-
-import Layout from '../layouts/Layout';
+import Home from './pages/Home/Home';
+import Sobre from './components/AboutSection/AboutSection';
+import Login from "./pages/Login/Login";
 
 function App() {
 
   return (
     <>
-        <Layout/>
         <Routes>
+          <Route index element={<Home/>}/>
           <Route path='/Sobre' element={<Sobre/>}/>
+          <Route path='/Login' element={<Login/>}/>
         </Routes> 
     </>
   )

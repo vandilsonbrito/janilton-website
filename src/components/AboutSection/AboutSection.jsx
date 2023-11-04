@@ -1,5 +1,5 @@
 import { Link } from 'react-scroll';
-import Janilton from '../../src/assets/imgs-janilton/foto-globo.jpg';
+import Janilton from '../../assets/imgs-janilton/foto-globo.jpg';
 
 export default function PresentationSection() {
   return (

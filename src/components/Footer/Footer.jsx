@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Social from '../Social/Social';
 
 export default function Footer() {
@@ -8,7 +9,7 @@ export default function Footer() {
             <Social/>
         </div>
         <div className="w-full bg-blue-700 pb-2 pt-1 flex justify-center text-center px-3">
-          <p className='text-white'>Todos os direitos reservados ao Professor Janilton. Desenvolvido por <a className='underline' href="https://www.linkedin.com/in/vandilson-brito-b791b3216/">Vandilson Brito</a></p>
+          <p className='text-white'>Todos os direitos reservados ao Professor <Link to='/Login'>Janilton</Link>. Desenvolvido por <a className='underline' href="https://www.linkedin.com/in/vandilson-brito-b791b3216/">Vandilson Brito</a></p>
         </div>
     </div>
   )

@@ -7,6 +7,7 @@ import Canal from '../components/ChannelSection/ChannelSection';
 import Contato from '../components/ContactSection/ContactSection';
 import Footer from "../components/Footer/Footer";
 
+
 export default function Layout() {
   return (
     <div>
