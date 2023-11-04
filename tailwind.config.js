@@ -17,6 +17,9 @@ export default {
       fontFamily: {
         Roboto: ['Roboto, sans-serif'],
         Montserrat: ['Montserrat, sans-serif']
+      },
+      colors: {
+        'main-blue': '#2b2da1'
       }
     },
   },
