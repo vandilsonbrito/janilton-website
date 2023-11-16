@@ -8,7 +8,7 @@ export default function ArticleMenuSection() {
         <div className='w-[90%] md:w-[80%] border-t-[1px] border-main-blue pb-16 lg:pb-24'></div>
         <div className="w-full flex flex-col items-center gap-8">
           <h2 className='text-2xl leading-normal md:text-3xl uppercase font-semibold text-center'>Acompanhe meus artigos de opinião</h2>
-          <p className='hidden sm:flex lg:text-lg text-center'>Estou sempre trazendo um novo artigo afim de dar minha opinião sobre o tema e causar indagações.</p>
+          <p className='hidden sm:flex lg:text-lg text-center'>Compartilho experiências, reflexões e insights ligados a prática pedagógica, iniciação científica e ensino de geografia.</p>
         </div>
         <div className="flex py-12 lg:py-16">
             <GrArticle className='text-5xl'/>
