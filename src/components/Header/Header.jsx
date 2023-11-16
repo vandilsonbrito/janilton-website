@@ -50,7 +50,7 @@ export default function Header() {
                             <Overlay className="overlay w-full h-screen absolute top-0 left-0 bg-[#00000070] z-40 hidden"/>
                         </div>
                     </div>
-                    <nav className="w-[55%] items-center justify-between text-sm lg:text-[1.1rem]  text-[#fff] hidden lg:flex">
+                    <nav className="w-[55%] items-center justify-between text-sm lg:text-[1.1rem]  text-yellow-500 hidden lg:flex">
                         <ScrollLink to='/sobre' href='/Sobre' smooth={true} duration={500} offset={-headerHeight} className="cursor-pointer">
                             <span className="hover:text-blue-700 hover:bg-white px-4 py-3 rounded-3xl ease-in-out duration-500">Sobre</span>
                         </ScrollLink>

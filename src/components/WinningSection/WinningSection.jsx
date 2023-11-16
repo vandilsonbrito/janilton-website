@@ -6,9 +6,9 @@ import { BsFillClipboard2CheckFill } from 'react-icons/bs';
 
 export default function WinningSection() {
   return (
-    <div className='w-full h-full bg-main-blue py-10 px-14 flex flex-col items-center font-Montserrat'>
+    <div className='w-full h-full bg-main-blue py-10 px-14 pb-20 lg:pb-24 flex flex-col items-center font-Montserrat'>
         <div className="w-full flex justify-center mt-10">
-            <h2 className="text-white text-4xl uppercase font-semibold text-center">Por que me acompanhar?</h2>
+            <h2 className="text-white text-3xl lg:text-4xl uppercase font-semibold text-center">Por que me acompanhar?</h2>
         </div>
         <div className="w-full flex flex-wrap gap-8 mt-20 justify-center">
             <div className="">
@@ -65,7 +65,7 @@ export default function WinningSection() {
                             <FaLightbulb className='text-6xl text-white'/>
                             <h3 className='text-[1.7rem] font-semibold text-white uppercase'>Inspiração</h3>
                         </div>
-                        <p className='text-base font-normal text-white text-center mt-5'>Mantenha-se inspirado com meus artigos informativos e vídeos educacionais.</p>
+                        <p className='text-base font-normal text-white text-center mt-5'>Mantenha-se inspirado com meus artigos e vídeos educacionais.</p>
                     </div>
                 </div>
             </div>

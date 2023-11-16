@@ -85,7 +85,7 @@ export default function ContactSection() {
             value="Enviar" 
             className="uppercase w-[50%] xl:w-[40%] h-[50px] rounded-xl bg-blue-700 text-white text-lg lg:text-xl font-semibold  cursor-pointer hover:shadow-xl hover:bg-blue-800  active:scale-[0.98] ease-in-out duration-200"
             />
-            <div className="w-full flex items-center">
+            <div className="w-full flex justify-center">
                 <p className=''>{response.type === 'error' ? 'Ocorreu um erro ao enviar. Tente novamente.' : response.message }</p>
             </div>
         </form>
