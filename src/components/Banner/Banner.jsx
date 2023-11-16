@@ -22,7 +22,7 @@ export default function Banner() {
                            
                         </div>
                         <div className="w-full text-center mt-2 lg:mt-0">
-                        <h1 className="text-[0.9rem] lg:text-xl bg-[#fff5f8] p-1">Domine a arte de dar aulas com um especialista em aulas criativas, pesquisa educacional e inovação.</h1>
+                        <h1 className="text-[0.9rem] lg:text-xl bg-[#fff5f8] p-1">Domine a arte de dar aulas com um especialista em aprendizagem criativa, inovação e iniciação cinetífica na escola.</h1>
                     </div>
                     </div>
                     
