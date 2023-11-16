@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import Janilton from '../../assets/imgs-janilton/foto-perfil.webp';
-import JaniltonMobile from '../../assets/imgs-janilton/foto-perfil-mobile.webp';
+import Janilton from '../../assets/imgs-janilton/foto-perfil2.webp';
+import JaniltonMobile from '../../assets/imgs-janilton/foto-perfil2-mobile.webp';
 
 export default function AboutSection() {
 
