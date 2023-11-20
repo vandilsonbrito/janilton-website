@@ -17,7 +17,6 @@ export const handleDocument = () => {
     const imagesalt = documents.map((item) => item?.data?.image?.alt);
     const slugs = documents.map((item) => item.uid)
 
-    
     return { titles, descriptions, textContents, imagesurl, imagesalt, slugs}
   };
 
