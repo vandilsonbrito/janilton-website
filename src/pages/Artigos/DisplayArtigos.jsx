@@ -4,7 +4,7 @@ import { FaLongArrowAltRight } from 'react-icons/fa'
 import { useEffect } from 'react';
 
 
-export default function MenuArtigos({ title, description, slug, imageurl }) {
+export default function MenuArtigos({ title, description, slug, imageurl, imagesalt }) {
     useEffect(() => {
         window.scrollTo(0, 30);
       }, []);
@@ -18,7 +18,7 @@ export default function MenuArtigos({ title, description, slug, imageurl }) {
                         <div className='w-full h-full p-3 flex flex-col justify-between'>
                             <div className="w-full h-full flex flex-col gap-5">
                                 <h1 className='text-2xl font-semibold text-center'>{title}</h1>
-                                <img src={imageurl} alt="" />
+                                <img src={imageurl} alt={imagesalt} />
                                 <p className='leading-relaxed'>{description}</p>
                             </div>
                             <div className="w-full h-full flex flex-col justify-end mt-5">
@@ -39,5 +39,6 @@ MenuArtigos.propTypes = {
     content: PropTypes.string,
     imageurl: PropTypes.string,
     slug: PropTypes.string,
+    imagesalt: PropTypes.string,
     articleId: PropTypes.number,
 }
