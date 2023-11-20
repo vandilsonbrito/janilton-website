@@ -18,18 +18,20 @@ export default function PaginaArtigos() {
     const displayParagraphs = (i, textContents) => {
         const paragraphs = [];
         const length = textContents?.[i].length;
-      
+
         for(let j = 0; j < length; j++) {
             paragraphs.push(
                 <p key={j} className={`${window.innerWidth < 700 ? 'py-3' : 'py-1'}`}>{textContents?.[i][j].text}</p>
                 )
             }
+
         return paragraphs;
     }
- 
-    const showArticle = (titles, descriptions, textContents, imagesurl, imagesalt, slugs) => {
-        
+    
+    
+    const showArticle = (titles, textContents, imagesurl, imagesalt, slugs) => {    
         const displayContent = [];
+
         for (let i = 0; i < slugs?.length; i++) {
             if(id === slugs[i]) {
                displayContent.push(
@@ -55,19 +57,19 @@ export default function PaginaArtigos() {
   return (
     <>
             <HeaderOutter/>
-            
-                { (titles && descriptions && textContents && imagesurl && imagesalt && slugs) ? 
-                    showArticle(titles, descriptions, textContents, imagesurl, imagesalt, slugs) 
-                    :
-                        <>
-                            <SkeletonArticle/>
-                            <SkeletonArticle/>
-                            <SkeletonArticle/>
-                            <SkeletonArticle/>
-                        </> 
+                <div className="w-full min-h-screen">
+                    { (titles && descriptions && textContents && imagesurl && imagesalt && slugs) ? 
+                        showArticle(titles, textContents, imagesurl, imagesalt, slugs) 
+                        :
+                            <>
+                                <SkeletonArticle/>
+                                <SkeletonArticle/>
+                                <SkeletonArticle/>
+                                <SkeletonArticle/>
+                            </> 
 
-                }
-            
+                    }
+                </div>     
             <Footer/>
         </>
   )
