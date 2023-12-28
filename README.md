@@ -21,9 +21,11 @@ Além disso, o site conta com a API do Youtube integrando o canal do Professor J
 
 Na seção de contato é possível o usuário mandar um e-mail diretamente para o professor facilitado pelo Static Forms, o professor receberá a mensagem e ao clicar em 'responder' no seu provedor de e-mail será direcionado para o envio da resposta com o endereço de e-mail do usuário já preenchido otimizando o processo de resposta. 
 
+Aprendi como colocar um site na busca do Google e fazendo todo o processo de compra de domínio e configuração de DNS.
+
 <h2>Exibition</h2>
 
 
 <h2>Demo</h2>
 
-https://sneaker-product1.netlify.app/
+https://profjanilton.com.br/
