@@ -14,7 +14,7 @@ export default function Sobre() {
   return (
     <>
       <Helmet>
-          <meta name="description" content="O Professor Janilton é graduado em Geografia, Ciências Biológicas e Pedagogia, o que permite uma perspectiva multidisciplinar e interdisciplinar que enriquece a prática pedagógica. Além disso, obteve especializações em Mídias na Educação, Formação Socioeconômica do Brasil e Gestão Ambiental e Desenvolvimento Sustentável. Atualmente, está fazendo Doutorando em Ciências, com um mestrado em Ensino de Ciências."/>
+          <meta name="description" content="O Professor Dr. Janilton é graduado em Geografia, Ciências Biológicas e Pedagogia, o que permite uma perspectiva multidisciplinar e interdisciplinar que enriquece a prática pedagógica. Além disso, obteve especializações em Mídias na Educação, Formação Socioeconômica do Brasil e Gestão Ambiental e Desenvolvimento Sustentável. Atualmente, está fazendo Doutorando em Ciências, com um mestrado em Ensino de Ciências."/>
         </Helmet>
       <HeaderOutter/>
       <div className="w-full h-full bg-white px-[10%] pb-14 font-Montserrat flex flex-col items-center sm:px-[20%] md:px-[15%] xl:px-[10%] text-black" id='/sobre'>
