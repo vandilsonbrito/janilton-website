@@ -23,7 +23,7 @@ function App() {
           <Route path='/Sobre' element={<Sobre/>}/>
           <Route path='/Canal' element={<CanalSection/>}/>
           <Route path='/Contato' element={<ContactSection/>}/>
-          <Route path='/*' element={<NotFound/>}/>
+          <Route path='*' element={<NotFound/>}/>
         </Routes>   
     </>
   )
