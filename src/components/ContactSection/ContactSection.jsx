@@ -1,6 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AOS from 'aos';
 
 export default function ContactSection() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    })
+  }, [])
+
   const ACCEESS_KEY = import.meta.env.VITE_ACCESS_KEY;
 
   const handleChange = e =>
@@ -52,13 +60,14 @@ export default function ContactSection() {
   };
 
   return (
-    <div className="w-full h-full bg-[#dbdbdbdc] px-8 pt-16 pb-24 flex flex-col items-center font-Montserrat" id="/contato">
-        <h3 className=" font-bold text-lg md:text-3xl mb-8 text-black">Entre em contato comigo</h3>
+    <section className="w-full h-full bg-[#dbdbdbdc] px-8 pt-16 pb-24 flex flex-col items-center font-Montserrat" id="/contato">
+        <h3 className=" font-bold text-lg md:text-3xl mb-8 text-black" data-aos="fade-up">Entre em contato comigo</h3>
 
         <form action="https://api.staticforms.xyz/submit" 
         method="POST" 
         onSubmit={handleSubmit}
         className="w-[95%] md:w-[60%] h-full flex flex-col items-center gap-8"
+        data-aos="fade-up"
         >
 
             <input 
@@ -89,6 +98,6 @@ export default function ContactSection() {
                 <p className=''>{response.type === 'error' ? 'Ocorreu um erro ao enviar. Tente novamente.' : response.message }</p>
             </div>
         </form>
-    </div>
+    </section>
   )
 } 

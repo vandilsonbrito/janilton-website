@@ -1,8 +1,17 @@
-import Wave from '../../assets/imgs-design/wave.svg'
+import Wave from '../../assets/imgs-design/wave.svg';
+import AOS from 'aos';
+import { useEffect } from 'react';
 
 export default function Banner() {
+
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,
+        })
+      }, [])
+
   return (
-    <div className='relative overflow-hidden'>
+    <section className='relative overflow-hidden'>
         <div className="w-full h-[700px] md:h-[680px] overflow-hidden relative">
             <div className={`w-full h-full ${window.innerWidth > 800 ? 'bg-Banner' : 'bg-BannerMobile'}  bg-no-repeat bg-cover bg-right-bottom opacity-70 relative`}>
                 
@@ -11,7 +20,7 @@ export default function Banner() {
             
             <div className="w-[100%] h-full flex flex-col lg:flex-row justify-center z-50 absolute top-24 pl-[0%] xl:pl-[12%] gap-0">
                 <div className="w-full h-fit flex flex-col items-center justify-center">
-                    <div className="w-[90%] mt-[2%]  px-10 flex flex-col lg:px-0 lg:block lg:flex-row lg:mt-[10%] lg:ml-3 xl:ml-0 2xl:mt-[5%]">
+                    <div className="w-[90%] mt-[2%]  px-10 flex flex-col lg:px-0 lg:block lg:flex-row lg:mt-[10%] lg:ml-3 xl:ml-0 2xl:mt-[5%]" data-aos="fade-right">
                         <div className="w-full flex flex-col justify-center items-center sm:gap-2 lg:gap-0 xl:gap-3 text-black">
                             
                             <h2 className="text-5xl mt-2 sm:text-7xl lg:leading-[7.5rem] lg:text-[5rem] xl:text-[6rem]">Professor</h2>
@@ -28,7 +37,7 @@ export default function Banner() {
                     
                 </div>
                 <div className="w-[100%] h-full flex flex-col lg:flex-row items-center lg:px-[50px] xl:px-[140px]">
-                    <div className={`w-[300px] h-[350px]  lg:w-[450px] lg:h-[570px] ${window.innerWidth > 800 ? 'bg-Picture-Profile' : 'bg-Picture-Profile-Mobile'} bg-Picture-Profile bg-no-repeat bg-contain -mt-5 lg:-mt-16`}></div>
+                    <div className={`w-[300px] h-[350px]  lg:w-[450px] lg:h-[570px] ${window.innerWidth > 800 ? 'bg-Picture-Profile' : 'bg-Picture-Profile-Mobile'} bg-Picture-Profile bg-no-repeat bg-contain -mt-5 lg:-mt-16`} data-aos="fade-left"></div>
                 </div>
             </div>
         </div>
@@ -38,6 +47,6 @@ export default function Banner() {
         <div className="w-[30%] 2xl:w-[37%] h-[100px] absolute top-[95%] left-[72%] z-[100] pointer-events-none">
             <img src={Wave} alt="" className='w-full h-full object-cover scale-x-[-1] -rotate-12'/>
         </div>
-    </div>
+    </section>
   )
 }

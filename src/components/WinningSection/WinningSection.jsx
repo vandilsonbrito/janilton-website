@@ -3,15 +3,25 @@ import { FaBrain, FaLightbulb } from 'react-icons/fa';
 import { BiSolidTimeFive } from 'react-icons/bi';
 import { MdOutlineAttachMoney } from 'react-icons/md';
 import { BsFillClipboard2CheckFill } from 'react-icons/bs';
+import AOS from 'aos';
+import { useEffect } from 'react';
+
 
 export default function WinningSection() {
+
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,
+        })
+      }, []) 
+
   return (
-    <div className='w-full h-full bg-main-blue py-10 px-14 pb-20 lg:pb-24 flex flex-col items-center font-Montserrat'>
-        <div className="w-full flex justify-center mt-10">
+    <section className='w-full h-full bg-main-blue py-10 px-14 pb-20 lg:pb-24 flex flex-col items-center font-Montserrat'>
+        <div className="w-full flex justify-center mt-10" data-aos="fade-up">
             <h2 className="text-white text-3xl lg:text-4xl uppercase font-semibold text-center">Por que me acompanhar?</h2>
         </div>
         <div className="w-full flex flex-wrap gap-8 mt-20 justify-center">
-            <div className="">
+            <div data-aos="fade-up">
                 <div className="w-[350px] h-[280px] bg-blue-800 rounded-3xl flex flex-col justify-center">
                     <div className="w-full h-full flex flex-col items-center gap-3 p-10">
                         <div className="w-full flex flex-col items-center gap-2">
@@ -22,7 +32,7 @@ export default function WinningSection() {
                     </div>
                 </div>
             </div>
-            <div className=" ">
+            <div data-aos="fade-up">
                 <div className="w-[350px] h-[280px] bg-blue-800 rounded-3xl">
                     <div className="w-full h-full flex flex-col items-center gap-3 p-10">
                         <div className="w-full flex flex-col items-center gap-2">
@@ -33,7 +43,7 @@ export default function WinningSection() {
                     </div>
                 </div>
             </div>
-            <div className=" ">
+            <div data-aos="fade-up">
                 <div className="w-[350px] h-[280px] bg-blue-800 rounded-3xl">
                     <div className="w-full h-full flex flex-col items-center gap-3 p-10">
                         <div className="w-full flex flex-col items-center gap-2">
@@ -47,7 +57,7 @@ export default function WinningSection() {
                     </div>
                 </div>
             </div>
-            <div className=" ">
+            <div data-aos="fade-up">
                 <div className="w-[350px] h-[280px] bg-blue-800 rounded-3xl">
                     <div className="w-full h-full flex flex-col items-center gap-3 p-10">
                         <div className="w-full flex flex-col items-center gap-2">
@@ -58,7 +68,7 @@ export default function WinningSection() {
                     </div>
                 </div>
             </div>
-            <div className=" ">
+            <div data-aos="fade-up">
                 <div className="w-[350px] h-[280px] bg-blue-800 rounded-3xl">
                     <div className="w-full h-full flex flex-col items-center gap-3 p-10">
                         <div className="w-full flex flex-col items-center gap-2">
@@ -70,6 +80,6 @@ export default function WinningSection() {
                 </div>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
