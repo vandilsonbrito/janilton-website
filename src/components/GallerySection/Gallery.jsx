@@ -34,23 +34,32 @@ import 'swiper/css/navigation';
 import 'swiper/swiper-bundle.css';
 import PropTypes from 'prop-types';
 SwiperCore.use([Navigation, Pagination, Scrollbar]);
+import AOS from 'aos';
+import { useEffect } from 'react';
 
 
 export default function Gallery() {
+
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,
+        })
+      }, [])
 
     function LazyLoadedImage({ src, alt, className }) {
         return <img className={className} src={src} alt={alt} loading="lazy" />;
     }
 
   return (
-    <div className="w-full h-full bg-white pt-20 pb-28 px-10 lg:px-16 font-Montserrat">
-        <h3 className='text-lg md:text-2xl font-semibold uppercase text-center mb-14 xl:-ml-5 xl:-mr-5 lg:ml-0 lg:mr-0 leading-relaxed'>um pouco da minha vida profissional descrita em fotografias </h3>
+    <section className="w-full h-full bg-white pt-20 pb-28 px-10 lg:px-16 font-Montserrat">
+        <h3 className='text-lg md:text-2xl font-semibold uppercase text-center mb-14 xl:-ml-5 xl:-mr-5 lg:ml-0 lg:mr-0 leading-relaxed'  data-aos="fade-left">um pouco da minha vida profissional descrita em fotografias </h3>
         {/* Mobile Screens */}
         <Swiper
             navigation={window.innerWidth > 760 ? true : false}
             pagination={false}
             loop={true} 
             className="flex lg:hidden w-[100%] h-full justify-center overflow-hidden border-[5px] border-white shadow-2xl rounded-lg opacity-90 -mt-5 "
+            data-aos="fade-left"
             > 
             <SwiperSlide className='w-full flex justify-center '>
                 <LazyLoadedImage className='swiper-imgs' src={imgGallery0} alt="" />
@@ -89,6 +98,7 @@ export default function Gallery() {
             pagination={true}
             loop={true} 
             className="hidden lg:flex  w-[100%] h-full justify-center overflow-hidden border-[5px] border-white shadow-2xl rounded-lg opacity-90 "
+            data-aos="fade-left"
             > 
             <SwiperSlide className='w-full flex justify-center '>
                 <LazyLoadedImage className='swiper-imgs' src={imgGallery0} alt="" />
@@ -137,7 +147,7 @@ export default function Gallery() {
             </SwiperSlide>
         </Swiper>
         <p className='mt-2 text-center'>Deslize para ver mais</p>
-    </div>
+    </section>
   )
 }
 

@@ -14,7 +14,7 @@ export default function MenuArtigos({ title, description, slug, imageurl, images
             
             { document && ( 
                 <Link to={`/Artigos/${slug}`} >
-                    <div className="w-[320px] h-full md:w-[340px] md:h-[620px] lg:w-[500px]  flex flex-col items-center bg-white text-black rounded-lg px-6 py-5 shadow-lg font-Montserrat">
+                    <main className="w-[320px] h-full md:w-[340px] md:h-[620px] lg:w-[500px]  flex flex-col items-center bg-white text-black rounded-lg px-6 py-5 shadow-lg font-Montserrat">
                         <div className='w-full h-full p-3 flex flex-col justify-between'>
                             <div className="w-full h-full flex flex-col gap-5">
                                 <h1 className='text-2xl font-semibold text-center'>{title}</h1>
@@ -25,7 +25,7 @@ export default function MenuArtigos({ title, description, slug, imageurl, images
                                 <p className='flex items-center gap-1 self-start font-semibold uppercase hover:text-blue-800'>Ler artigo completo <FaLongArrowAltRight/></p>
                             </div>
                         </div>
-                    </div>
+                    </main>
                 </Link>
 
             )}

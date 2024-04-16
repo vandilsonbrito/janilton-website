@@ -5,14 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && copy sitemap.xml dist\\ && copy robots.txt dist\\",
+    "build": "vite build && copy sitemap.xml dist\\ && copy robots.txt dist\\ && copy _redirects dist\\",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
     "@prismicio/client": "^7.3.1",
     "@prismicio/react": "^2.7.3",
-    "firebase": "^10.5.2",
+    "aos": "^2.3.4",
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
