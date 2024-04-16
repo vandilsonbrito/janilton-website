@@ -42,7 +42,7 @@ export default function MenuArtigos() {
                 >
                     
                 {<HeaderOutter/>}
-                <div className='w-full h-full min-h-screen   bg-white text-white py-28 lg:py-40 flex flex-col justify-center'>
+                <main className='w-full h-full min-h-screen   bg-white text-white py-28 lg:py-40 flex flex-col justify-center'>
                     <div className="w-full flex justify-center pb-10 md:pb-20">
                         <h1 className='text-3xl md:text-4xl text-black uppercase font-semibold'>Artigos</h1>
                     </div>
@@ -60,7 +60,7 @@ export default function MenuArtigos() {
                         }
 
                     </div>
-                </div>
+                </main>
                 
                 <Footer/>
             </motion.div>

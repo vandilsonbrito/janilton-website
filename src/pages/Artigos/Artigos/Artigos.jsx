@@ -57,7 +57,7 @@ export default function PaginaArtigos() {
   return (
     <>
             <HeaderOutter/>
-                <div className="w-full min-h-screen">
+                <main className="w-full min-h-screen">
                     { (titles && descriptions && textContents && imagesurl && imagesalt && slugs) ? 
                         showArticle(titles, textContents, imagesurl, imagesalt, slugs) 
                         :
@@ -69,7 +69,7 @@ export default function PaginaArtigos() {
                             </> 
 
                     }
-                </div>     
+                </main>     
             <Footer/>
         </>
   )
